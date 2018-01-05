@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.action{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#canvas{
+    background: green;
+
+}
+
+.action #penscil{
+    display: none;
+}
+
+.action.x #penscil{
+    display: inline-block;
+}
+
+.action.x #earser{
+    display: none;
+}
