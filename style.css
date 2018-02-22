@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -34,6 +35,7 @@ li{
     background: -webkit-linear-gradient(top, transparent 39px, rgb(86, 182, 255) 40px, transparent 41px, transparent 79px, rgb(241, 23, 136) 80px),
     -webkit-linear-gradient(left, transparent 39px, orange 40px, transparent 41px, transparent 79px, rgb(53, 202, 159) 80px);
     background-size: 81px 81px;
+
 }
 
 .action .penscil{
@@ -65,11 +67,14 @@ li{
 
 .action .penscil.active{
     fill: red;
-
+    transform: scale(1.1);
+    transition: all .3s;
 }
 
 .action .earser.active{
     fill: red;
+    transform: scale(1.1);
+    transition: all .3s;
 }
 
 .color ul{
@@ -85,7 +90,8 @@ li{
     margin: 10px 0;
     border: 1px solid rgb(242, 242, 242);
     border-radius: 50%;
-    box-shadow: 0px -1px 5px 2.5px rgb(205, 205, 205);
+    box-shadow: 0px 0px 5px 2.5px rgb(205, 205, 205);
+    transition: all .3s;
 }
 
 .color ul .black{
@@ -93,7 +99,8 @@ li{
 }
 
 .color ul .black.active{
-    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
 }
 
 .color ul .red{
@@ -101,7 +108,8 @@ li{
 }
 
 .color ul .red.active{
-    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
 }
 
 .color ul .green{
@@ -109,7 +117,8 @@ li{
 }
 
 .color ul .green.active{
-    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
 }
 
 .color ul .blue{
@@ -117,7 +126,8 @@ li{
 }
 
 .color ul .blue.active{
-    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
 }
 
 .color ul .yellow{
@@ -125,7 +135,8 @@ li{
 }
 
 .color ul .yellow.active{
-    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
 }
 
 
