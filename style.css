@@ -31,6 +31,9 @@ li{
     position: fixed;
     top: 0;
     left: 0;
+    background: -webkit-linear-gradient(top, transparent 39px, rgb(86, 182, 255) 40px, transparent 41px, transparent 79px, red 80px),
+    -webkit-linear-gradient(left, transparent 39px, orange 40px, transparent 41px, transparent 79px, rgb(53, 202, 159) 80px);
+    background-size: 81px 81px;
 }
 
 .action .penscil{
@@ -94,7 +97,7 @@ li{
 }
 
 .color ul .red{
-    background: red;
+    background: rgb(138, 50, 49);
 }
 
 .color ul .red.active{
@@ -102,7 +105,7 @@ li{
 }
 
 .color ul .green{
-    background: green;
+    background: rgb(53, 202, 159);
 }
 
 .color ul .green.active{
@@ -110,7 +113,7 @@ li{
 }
 
 .color ul .blue{
-    background: blue;
+    background: rgb(86, 182, 255);
 }
 
 .color ul .blue.active{

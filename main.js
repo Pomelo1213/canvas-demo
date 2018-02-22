@@ -156,7 +156,7 @@ red.onclick = function(){
     blue.classList.remove('active');
     green.classList.remove('active');
     black.classList.remove('active');
-    paintColor = 'red';
+    paintColor = 'rgb(138, 50, 49)';
 
 }
 
@@ -165,7 +165,7 @@ green.onclick = function(){
     blue.classList.remove('active');
     red.classList.remove('active');
     black.classList.remove('active');
-    paintColor = 'green';
+    paintColor = 'rgb(53, 202, 159)';
 }
 
 blue.onclick = function(){
@@ -173,7 +173,7 @@ blue.onclick = function(){
     red.classList.remove('active');
     green.classList.remove('active');
     black.classList.remove('active');
-    paintColor = 'blue';
+    paintColor = 'rgb(86, 182, 255)';
 }
 
 clear.onclick = function(){
