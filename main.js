@@ -45,7 +45,6 @@ canvas.ontouchmove = function(touch){
         }
 
     }else{
-
         if(Operating){
             drawCir(touch.touches[0].clientX, touch.touches[0].clientY, linetWidth);
             var endPoint = {'x': touch.touches[0].clientX, 'y': touch.touches[0].clientY};
@@ -143,37 +142,39 @@ earser.onclick = function(){
 }
 
 black.onclick = function(){
-    black.classList.add('active');
-    red.classList.remove('active');
-    blue.classList.remove('active');
-    green.classList.remove('active');
+    changeColor(black)
     paintColor = 'black';
-
 }
 
 red.onclick = function(){
-    red.classList.add('active');
-    blue.classList.remove('active');
-    green.classList.remove('active');
-    black.classList.remove('active');
+    changeColor(red)
     paintColor = 'rgb(138, 50, 49)';
-
 }
 
 green.onclick = function(){
-    green.classList.add('active');
-    blue.classList.remove('active');
-    red.classList.remove('active');
-    black.classList.remove('active');
+    changeColor(green)
     paintColor = 'rgb(53, 202, 159)';
 }
 
 blue.onclick = function(){
-    blue.classList.add('active');
-    red.classList.remove('active');
-    green.classList.remove('active');
-    black.classList.remove('active');
+    changeColor(blue)
     paintColor = 'rgb(86, 182, 255)';
+}
+
+yellow.onclick = function(){
+    changeColor(yellow)
+    paintColor = 'rgb(255, 211, 0)';
+}
+
+function changeColor(color){
+        let allChilds = color.parentNode.childNodes
+        allChilds.forEach((item) => {
+            if(item === color){
+                color.classList.add('active')
+            }else{
+                item.classList.remove('active')
+            }
+        })
 }
 
 clear.onclick = function(){
@@ -183,21 +184,14 @@ clear.onclick = function(){
 down.onclick = function(){
     var a = document.createElement('a');
     document.body.appendChild(a);
-    console.log('a');
     var url = canvas.toDataURL('image/png');
     a.href = url;
     a.download = 'xxx';
     a.click();
 }
 
-small.onclick = function(){
+small.onclick = function(){linetWidth = 4;}
 
-    linetWidth = 4;
-}
-
-big.onclick = function(){
-
-    linetWidth = 10;
-}
+big.onclick = function(){linetWidth = 10;}
 
 

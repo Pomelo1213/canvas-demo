@@ -31,7 +31,7 @@ li{
     position: fixed;
     top: 0;
     left: 0;
-    background: -webkit-linear-gradient(top, transparent 39px, rgb(86, 182, 255) 40px, transparent 41px, transparent 79px, red 80px),
+    background: -webkit-linear-gradient(top, transparent 39px, rgb(86, 182, 255) 40px, transparent 41px, transparent 79px, rgb(241, 23, 136) 80px),
     -webkit-linear-gradient(left, transparent 39px, orange 40px, transparent 41px, transparent 79px, rgb(53, 202, 159) 80px);
     background-size: 81px 81px;
 }
@@ -120,6 +120,16 @@ li{
     box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
 }
 
+.color ul .yellow{
+    background: rgb(255, 211, 0);
+}
+
+.color ul .yellow.active{
+    box-shadow: 0px -1px 5px 3px rgb(180, 180, 180);
+}
+
+
+
 .cuxi ul{
     position: fixed;
     top: 20px;
@@ -127,18 +137,16 @@ li{
 }
 
 .cuxi ul li:nth-child(1){
-     width: 35px;
+     width: 45px;
      height: 10px;
      background-color: black;
-     border-radius: 4px;
  }
 
 .cuxi ul li:nth-child(2){
-    width: 35px;
+    width: 45px;
     height: 15px;
     margin: 20px 0;
     background-color: black;
-    border-radius: 4px;
 }
 
 
